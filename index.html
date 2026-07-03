@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daftar Nilai SMK — 2025/2026</title>
+<title>Daftar Nilai SMK — 2026/2027</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <style>
 :root {
@@ -500,7 +500,7 @@ td .cell-in:focus { background: #dbeafe; border-radius: 4px; }
 <div id="toast"></div>
 
 <script>
-const GAS_URL = "https://script.google.com/macros/s/AKfycbw7MsQiZILlALiLVf-_C89RxRRTfSFR0_wgHrHPsXt2aR9TiTLbbKK0UEVQ5-p7lDECvQ/exec";
+const GAS_URL = "https://script.google.com/macros/s/AKfycbwbbUGuu82WsvqLPEWzO-grQwietgSIXmdGiJ5Bso4L-o6Xp-lMKIAWRqxAhKtDUpjNIw/exec";
 
 // ─── CONFIG FIELDS ────────────────────────────────────────────────────────────
 const CFG_KEYS = ['sekolah','mapel','kelas','semester','guru','kkm'];
@@ -669,7 +669,7 @@ function applyConfigToUI(cfg) {
   const kelas   = cfg.kelas   || '';
   const mapel   = cfg.mapel   || '';
   document.getElementById('header-sub').textContent =
-    `Sistem Penilaian ${sekolah}${kelas ? ' · ' + kelas : ''}${mapel ? ' · ' + mapel : ''} · T.P. 2025/2026`;
+    `Sistem Penilaian ${sekolah}${kelas ? ' · ' + kelas : ''}${mapel ? ' · ' + mapel : ''} · T.P. 2026/2027`;
   if (mapel || kelas)
     document.getElementById('header-title').textContent =
       `Daftar Nilai${mapel ? ' — ' + mapel : ''}${kelas ? ' (' + kelas + ')' : ''}`;
